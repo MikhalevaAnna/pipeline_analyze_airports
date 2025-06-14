@@ -79,8 +79,8 @@ AIRLINE: Название авиалинии. <br>
 
 #### Команды для запуска проекта:
 ```bash
-    git clone https://github.com/MikhalevaAnna/pipelines_analyze_airports.git
-    cd pipelines_analyze_airports
+    git clone https://github.com/MikhalevaAnna/pipeline_analyze_airports.git
+    cd pipeline_analyze_airports
     docker build -t airflow-with-java-airlines .
     docker-compose up --build
 ```
