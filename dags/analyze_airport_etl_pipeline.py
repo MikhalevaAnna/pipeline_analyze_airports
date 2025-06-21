@@ -257,7 +257,7 @@ def select_in_postgres():
             .option("password", POSTGRES_PASSWORD) \
             .option("dbtable", f'({query}) AS subquery') \
             .load()
-        print("Выведем авиакомпании - общее время полетов ее самолетов для 10000 записей в таблице:")
+        print(f"Выведем авиакомпании - общее время полетов ее самолетов для 10000 записей из таблицы {airlines_data}:")
         df_read.show()
     except Exception as error:
         raise Exception(
